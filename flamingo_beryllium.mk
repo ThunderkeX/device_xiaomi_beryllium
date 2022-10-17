@@ -6,11 +6,12 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common flamingo stuff.
+$(call inherit-product, vendor/flamingo/target/product/flamingo.mk)
 $(call inherit-product, device/xiaomi/beryllium/device-hidl.mk)
 
-NAD_BUILD_TYPE := OFFICIAL
+GAPPS_BUILD := true
+WITH_GMS := true
 # Bootlogo sector
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2246
@@ -20,7 +21,7 @@ USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_beryllium
+PRODUCT_NAME := flamingo_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1

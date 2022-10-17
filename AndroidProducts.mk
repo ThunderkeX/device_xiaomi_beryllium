@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The nadOS Project
+# Copyright (C) 2018-2019 The flamingoOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_beryllium.mk
+    $(LOCAL_DIR)/flamingo_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_beryllium-user \
-    nad_beryllium-userdebug \
-    nad_beryllium-eng
+    flamingo_beryllium-user \
+    flamingo_beryllium-userdebug \
+    flamingo_beryllium-eng
